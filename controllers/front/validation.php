@@ -27,7 +27,7 @@
 /**
  * @since 1.5.0
  */
-class PaymentExampleValidationModuleFrontController extends ModuleFrontController
+class PsDohoneGatewayValidationModuleFrontController extends ModuleFrontController
 {
     /**
      * @see FrontController::postProcess()
@@ -42,7 +42,7 @@ class PaymentExampleValidationModuleFrontController extends ModuleFrontControlle
         // Check that this payment option is still available in case the customer changed his address just before the end of the checkout process
         $authorized = false;
         foreach (Module::getPaymentModules() as $module) {
-            if ($module['name'] == 'paymentexample') {
+            if ($module['name'] == 'ps-dohone-gateway') {
                 $authorized = true;
                 break;
             }
@@ -57,7 +57,7 @@ class PaymentExampleValidationModuleFrontController extends ModuleFrontControlle
         ]);
 
         //$this->setTemplate('payment_return.tpl');
-        $this->setTemplate('module:paymentexample/views/templates/front/payment_return.tpl');
+        $this->setTemplate('module:ps-dohone-gateway/views/templates/front/payment_return.tpl');
 
 
         // $customer = new Customer($cart->id_customer);

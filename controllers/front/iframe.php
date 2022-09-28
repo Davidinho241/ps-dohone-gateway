@@ -27,7 +27,7 @@
 /**
  * @since 1.5.0
  */
-class PaymentExampleIframeModuleFrontController extends ModuleFrontController
+class PsDohoneGatewayIframeModuleFrontController extends ModuleFrontController
 {
     public function initContent()
     {
@@ -36,6 +36,6 @@ class PaymentExampleIframeModuleFrontController extends ModuleFrontController
             'src' => 'http://www.prestashop.com',
         ]);
 
-        $this->setTemplate('module:paymentexample/views/templates/front/iframe.tpl');
+        $this->setTemplate('module:ps-dohone-gateway/views/templates/front/iframe.tpl');
     }
 }

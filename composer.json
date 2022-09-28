@@ -1,16 +1,16 @@
 {
-  "name": "prestashop/paymentexample",
-  "description": "PrestaShop module paymentexample",
-  "homepage": "https://github.com/PrestaShop/paymentexample",
+  "name": "ps-dohone-gateway",
+  "description": "A payment gateway to accept all cameroonian payments (mobile money and card) provide by DOHONE S.A and build by Ets DKSOFT.",
+  "homepage": "https://github.com/Davidinho241/ps-dohone-gateway",
   "license": "AFL-3.0",
   "authors": [
     {
-      "name": "PrestaShop SA",
-      "email": "contact@prestashop.com"
+      "name": "David KALLA | Ets DKSOFT",
+      "email": "d.kalla@dksoft237.com"
     }
   ],
   "require": {
-    "php": ">=5.3.2"
+    "php": ">=7.4"
   },
   "config": {
     "preferred-install": "dist"
